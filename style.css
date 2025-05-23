@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,7 +9,8 @@
     color: white;
 }
 
-html, body{
+html,
+body {
     height: 100%;
     width: 100%;
     background: hsla(296, 100%, 6%, 1);
@@ -21,7 +22,7 @@ html, body{
     align-items: center;
 }
 
-.app-container{
+.app-container {
     position: absolute;
     width: 90%;
     max-width: 470px;
@@ -33,14 +34,14 @@ html, body{
     text-align: center;
 }
 
-.search-box{
+.search-box {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.search-box input{
+.search-box input {
     height: 60px;
     flex: 1;
     font-size: 18px;
@@ -53,11 +54,12 @@ html, body{
     display: flex;
     justify-content: center;
 }
-.search-box input:focus{
+
+.search-box input:focus {
     outline: none;
 }
 
-#search{
+#search {
     background-color: #ebfffc;
     border-radius: 50%;
     border: none;
@@ -67,44 +69,43 @@ html, body{
     cursor: pointer;
 }
 
-#search img{
+#search img {
     width: 20px;
 }
 
-#search:hover{
+#search:hover {
     background-color: #e6ebea;
 }
 
-.error{
+.error {
     text-align: left;
     margin-left: 14px;
     margin-top: 10px;
     display: none;
 }
 
-
-.weather-icon{
+.weather-icon {
     width: 170px;
     margin-top: 30px;
 }
 
-#condition{
+#condition {
     font-size: 17px;
     font-weight: 600;
 }
 
-#temp{
+#temp {
     font-size: 80px;
     font-weight: 500;
 }
-#city{
+
+#city {
     font-size: 45px;
     font-weight: 400;
     margin-top: -10px;
 }
 
-
-.details{
+.details {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -112,31 +113,28 @@ html, body{
     margin-top: 50px;
 }
 
-.col{
+.col {
     display: flex;
     align-items: center;
     text-align: left;
 }
 
-.col img{
+.col img {
     width: 40px;
     margin-right: 10px;
     margin-top: 0;
 }
 
-.humidity, .wind{
+.humidity,
+.wind {
     font-size: 28px;
     margin-top: -6px;
 }
 
-
-
-@media screen and (max-width:1000px) {
-    
-}
+@media screen and (max-width:1000px) {}
 
 @media screen and (max-width:550px) {
-    .app-container{
+    .app-container {
         top: 50px;
         left: 20px;
         right: 50px;
@@ -145,73 +143,81 @@ html, body{
         height: 85vh;
         margin: 0;
     }
-    .details{
+
+    .details {
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 20px;
     }
-    .search-box input{
+
+    .search-box input {
         height: 50px;
         width: 30%;
     }
-    #search{
+
+    #search {
         width: 50px;
         height: 50px;
     }
-    #search img{
+
+    #search img {
         width: 15px;
     }
-    .col img{
+
+    .col img {
         width: 30px;
     }
-    .humidity, .wind{
+
+    .humidity,
+    .wind {
         font-size: 15px;
     }
-    .col div:last-child{
+
+    .col div:last-child {
         font-size: 12px;
     }
 }
 
 @media screen and (max-height: 730px) {
-    .app-container{
+    .app-container {
         top: 7vh;
         height: 84vh;
         bottom: 20px;
     }
-    .search-box input{
+
+    .search-box input {
         height: 40px;
         width: 30%;
     }
-    #search{
+
+    #search {
         width: 40px;
         height: 40px;
     }
-    #search img{
+
+    #search img {
         width: 12px;
     }
-    #temp{
+
+    #temp {
         font-size: 8vh;
     }
-    #city{
+
+    #city {
         font-size: 25px;
     }
-    .details{
+
+    .details {
         margin-top: 3vh;
     }
-    .col div:last-child{
+
+    .col div:last-child {
         font-size: 1.5vh;
     }
 }
 
-
-
-
-
-/* CSS for Preloader */
-
-/**************/
-#preloader{
+#preloader {
     background-color: #212121;
     width: 100%;
     height: 100vh;
@@ -223,15 +229,14 @@ html, body{
     justify-content: center;
 }
 
-
 .loader {
     position: relative;
     width: 120px;
     height: 90px;
     margin: 0 auto;
-  }
-  
-  .loader:before {
+}
+
+.loader:before {
     content: "";
     position: absolute;
     bottom: 30px;
@@ -241,9 +246,9 @@ html, body{
     border-radius: 50%;
     background: #2a9d8f;
     animation: loading-bounce 0.5s ease-in-out infinite alternate;
-  }
-  
-  .loader:after {
+}
+
+.loader:after {
     content: "";
     position: absolute;
     right: 0;
@@ -253,38 +258,38 @@ html, body{
     border-radius: 4px;
     box-shadow: 0 5px 0 #f2f2f2, -35px 50px 0 #f2f2f2, -70px 95px 0 #f2f2f2;
     animation: loading-step 1s ease-in-out infinite;
-  }
-  
-  @keyframes loading-bounce {
+}
+
+@keyframes loading-bounce {
     0% {
-      transform: scale(1, 0.7);
+        transform: scale(1, 0.7);
     }
-  
+
     40% {
-      transform: scale(0.8, 1.2);
+        transform: scale(0.8, 1.2);
     }
-  
+
     60% {
-      transform: scale(1, 1);
+        transform: scale(1, 1);
     }
-  
+
     100% {
-      bottom: 140px;
+        bottom: 140px;
     }
-  }
-  
-  @keyframes loading-step {
+}
+
+@keyframes loading-step {
     0% {
-      box-shadow: 0 10px 0 rgba(0, 0, 0, 0),
-              0 10px 0 #f2f2f2,
-              -35px 50px 0 #f2f2f2,
-              -70px 90px 0 #f2f2f2;
+        box-shadow: 0 10px 0 rgba(0, 0, 0, 0),
+            0 10px 0 #f2f2f2,
+            -35px 50px 0 #f2f2f2,
+            -70px 90px 0 #f2f2f2;
     }
-  
+
     100% {
-      box-shadow: 0 10px 0 #f2f2f2,
-              -35px 50px 0 #f2f2f2,
-              -70px 90px 0 #f2f2f2,
-              -70px 90px 0 rgba(0, 0, 0, 0);
+        box-shadow: 0 10px 0 #f2f2f2,
+            -35px 50px 0 #f2f2f2,
+            -70px 90px 0 #f2f2f2,
+            -70px 90px 0 rgba(0, 0, 0, 0);
     }
-  }
+}
